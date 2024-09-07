@@ -20,6 +20,7 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('', include('pages.urls')),
+    path('articles/', include('articles.urls')),
     path('admin/', admin.site.urls),
     path('users/', include('users.urls')),  # Ваши пользовательские URL
     path('users/', include('django.contrib.auth.urls')),  # Встроенные URL для аутентификации

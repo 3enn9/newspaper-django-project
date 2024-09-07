@@ -41,8 +41,10 @@ INSTALLED_APPS = [
 
     'users',
     'pages',
-
+    'articles',
 ]
+
+TIME_ZONE = 'Russia/Moscow'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -129,3 +131,4 @@ LOGIN_REDIRECT_URL = 'home'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
